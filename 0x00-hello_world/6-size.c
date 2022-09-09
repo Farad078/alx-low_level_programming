@@ -16,19 +16,19 @@ long long int d;
 float e;
 
 /* prints the size of a char */
-printf("size of a char: %d byte(s)", sizeof(a));
+printf("size of a char: %d byte(s)\n", sizeof(a));
 
 /* prints the size of an int */
-printf("size of an int: %d byte(s)", sizeof(b));
+printf("size of an int: %d byte(s)\n", sizeof(b));
 
 /* prints the size of a long int */
-printf("size of a long int: %d byte(s)", sizeof(c));
+printf("size of a long int: %d byte(s)\n", sizeof(c));
 
 /* prints the size of a long long int */
-printf("size of a long long int: %d byte(s)", sizeof(d));
+printf("size of a long long int: %d byte(s)\n", sizeof(d));
 
 /* prints the size of a float */
-printf("size of a float: %d byte(s)", sizeof(e));
+printf("size of a float: %d byte(s)\n", sizeof(e));
 
 return (0);
 }
