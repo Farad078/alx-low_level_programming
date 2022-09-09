@@ -9,22 +9,26 @@
 int main(void)
 {
 /* Generate different sizes of data types. */
-char_size = sizeof(char);
-int_size = sizeof(int);
-long_int_size = sizeof(long int);
-float_size = sizeof(float);
+char a;
+int b;
+long int c;
+long long int d;
+float e;
 
 /* prints the size of a char */
-printf("size of a char: %d", char_size, "byte(s)");
+printf("size of a char: %d byte(s)", sizeof(a));
 
 /* prints the size of an int */
-printf("size of a char: %d", int_size, "byte(s)");
+printf("size of an int: %d byte(s)", sizeof(b));
 
 /* prints the size of a long int */
-printf("size of a char: %d", long_int_size, "byte(s)");
+printf("size of a long int: %d byte(s)", sizeof(c));
+
+/* prints the size of a long long int */
+printf("size of a long long int: %d byte(s)", sizeof(d));
 
 /* prints the size of a float */
-printf("size of a char: %d", float_size, "byte(s)");
+printf("size of a float: %d byte(s)", sizeof(e));
 
 return (0);
 }
