@@ -4,8 +4,17 @@
 #include <stdio.h>
 
 /* betty style doc for function main goes there */
+/**
+ * main - entry point
+ *
+ * description: 'To find the last digit of any random number.'
+ *
+ * return: Always 0 (Success)
+ */
+
 int main(void)
 {
+
 	int n, last_digit;
 
 	srand(time(0));
@@ -20,7 +29,8 @@ int main(void)
 	}
 	else if ((last_digit > 0 && last_digit < 6) || last_digit < 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last_digit);
+		printf("Last digit of %d ", n);
+		printf(" is %d and is less than 6 and not 0\n", last_digit);
 	}
 	else
 	{
