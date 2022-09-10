@@ -12,6 +12,6 @@
 
 int main(void)
 {
-	putchar ('abcdefghijklmnopqrstuvwxyz ');
+	putchar ("abcdefghijklmnopqrstuvwxyz ");
 	return (0);
 }
