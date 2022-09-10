@@ -3,13 +3,10 @@
 /* more headers goes there */
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- * main - entry point
+ * main - Entry point
  *
- * description: 'To find the last digit of any random number.'
- *
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
