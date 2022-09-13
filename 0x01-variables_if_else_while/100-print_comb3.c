@@ -1,37 +1,35 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <stdlib.h>
+#include <time.h>
 
-/* betty style doc for function main goes there */
 /**
  * main - Entry point
- *
- *Description: 'the program's description'
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int c;
-	int a;
-	int k = 1;
+	int c, k;
 
-	for (c = '0'; c <= '8'; c++)
+	for (c = '0'; c < '9'; c++)
 	{
-		for (a = '1'; a <= '9'; a++)
+		for (k = c + 1; k <= '9'; k++)
 		{
-			putchar(c);
-			putchar(a);
-
-			if (k < 81)
+			if (k != c)
 			{
+				putchar(c);
+				putchar(k);
+
+				if (c == '8' && k == '9')
+					continue;
+
 				putchar(',');
 				putchar(' ');
-				k++;
 			}
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
-
