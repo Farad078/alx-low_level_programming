@@ -7,7 +7,7 @@
  * Return: a value
  */
 
-int abs(int n)
+int abs(int)
 {
 	if (n > 0)
 		return (n);
