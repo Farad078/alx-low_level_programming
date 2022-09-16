@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - Entry point
+ * print_most_numbers - Entry point
  *
  * Description: 'the program's description'
  *
