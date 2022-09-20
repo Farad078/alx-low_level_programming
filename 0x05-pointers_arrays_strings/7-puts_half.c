@@ -12,13 +12,15 @@ void puts_half(char *str)
 	int x, y;
 	int len = 0;
 	int j = 0;
+	int total;
 
 	for (; *(str + j) != '\0'; j++)
 	{
 		len++;
 	}
-
-	if (len % 2 == 0)
+	
+	total = len - 1;
+	if (total  % 2 == 0)
 	{
 		x = (len / 2);
 		for (; x <= len; x++)
