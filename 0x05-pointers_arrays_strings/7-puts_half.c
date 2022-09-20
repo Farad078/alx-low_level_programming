@@ -17,11 +17,11 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-
+	len = len - 1;
 
 	if (len % 2 == 0)
 	{
-		x = (len / 2);
+		x = (len / 2) + 1;
 		for (; x <= len; x++)
 		{
 			_putchar(*(str + x));
@@ -29,7 +29,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		y = ((len - 1) / 2) + 1;
+		y = ((len - 1) / 2) + 2;
 		for (; y <= len; y++)
 		{
 			_putchar(*(str + y));
