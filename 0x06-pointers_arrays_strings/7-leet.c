@@ -27,7 +27,7 @@ char *leet(char *s)
 		else if ((s[i] == 'o') || (s[i] == 'O'))
 		{
 			s[i] = '0';
-                }
+		}
 
 		else if ((s[i] == 't') || (s[i] == 'T'))
 		{
