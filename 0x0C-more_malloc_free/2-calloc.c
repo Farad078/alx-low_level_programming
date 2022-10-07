@@ -11,9 +11,11 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *temp = malloc(nmemb * size);
+	void *temp;
 
-	if (temp == NULL)
+	if ((nmemb == 0) || (size == 0))
 		return (NULL);
+
+	temp = malloc(nmemb * size);
 	return (temp);
 }
