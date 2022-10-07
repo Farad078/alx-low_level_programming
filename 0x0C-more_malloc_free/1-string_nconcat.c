@@ -29,18 +29,23 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	temp = (char *)malloc(len * sizeof(char));
 	a = 0, b = 0;
 
-	while (s1[a] != '\0')
+	if (temp == NULL)
+		return (NULL);
+	else
 	{
-		temp[a] = s1[a];
-		a++;
-	}
+		while (s1[a] != '\0')
+		{
+			temp[a] = s1[a];
+			a++;
+		}
 
-	while (b < n)
-	{
-		temp[a] = s2[b];
-		a++;
-		b++;
+		while (b < n)
+		{
+			temp[a] = s2[b];
+			a++;
+			b++;
+		}
+		temp[a] = '\0';
+		return (temp);
 	}
-	temp[a] = '\0';
-	return (temp);
 }
