@@ -20,12 +20,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len++;
 	}
 
-	while (s2[b] != '\0')
+	while (b <= n)
 	{
 		b++;
 		len++;
 	}
-	len += 1;
 
 	temp = (char *)malloc(len * sizeof(char));
 	a = 0, b = 0;
