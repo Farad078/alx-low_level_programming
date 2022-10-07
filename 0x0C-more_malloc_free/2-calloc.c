@@ -18,7 +18,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	temp = malloc(nmemb * size);
-	temp = (char *)temp;	
 	while (a < nmemb * size)
 	{
 		temp[a] = 0;
