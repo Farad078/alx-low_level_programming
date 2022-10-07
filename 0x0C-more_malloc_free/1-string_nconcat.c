@@ -30,22 +30,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	a = 0, b = 0;
 
 	if (temp == NULL)
-		return (NULL);
-	else
+	return (NULL);
+	while (s1[a] != '\0')
 	{
-		while (s1[a] != '\0')
-		{
-			temp[a] = s1[a];
-			a++;
-		}
-
-		while (b < n)
-		{
-			temp[a] = s2[b];
-			a++;
-			b++;
-		}
-		temp[a] = '\0';
-		return (temp);
+		temp[a] = s1[a];
+		a++;
 	}
+
+	while (b < n)
+	{
+		temp[a] = s2[b];
+		a++;
+		b++;
+	}
+	temp[a] = '\0';
+	return (temp);
 }
