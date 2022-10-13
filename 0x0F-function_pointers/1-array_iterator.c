@@ -18,6 +18,9 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 	func = action;
 
+	if ((array == NULL) || (action == NULL))
+		return;
+
 	while (i < size)
 	{
 		(*func)(temp_array[i]);
