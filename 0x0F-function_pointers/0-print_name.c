@@ -13,6 +13,9 @@ void print_name(char *name, void (*f)(char *))
 	void (**func)(char *);
 	char **temp;
 
+	if ((name == NULL) || (f == NULL))
+		return;
+
 	temp = &name;
 	func = &f;
 	(*func)(*temp);
