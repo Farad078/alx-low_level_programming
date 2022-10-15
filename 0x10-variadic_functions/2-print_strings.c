@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - check variadic_functions
+ * print_strings - check variadic_functions
  * Description: a function that returns the sum of all its parameters.
  * @separator: pointer to a character
  * @n: input unsigned integer
