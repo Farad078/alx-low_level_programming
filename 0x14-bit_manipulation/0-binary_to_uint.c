@@ -23,12 +23,12 @@ unsigned int binary_to_uint(const char *b)
 	{
 		len++;
 	}
-	
+
 	ptr = malloc(sizeof(char) * len);
 	ptr = b;
 	i = 0;
 	k = len;
-	k--;	
+	k--;
 
 	for (; i < len; i++)
 	{
@@ -38,12 +38,19 @@ unsigned int binary_to_uint(const char *b)
 			k--;
 		}
 		else
-			return 0;
+			return (0);
 	}
 
 	return (b_sum);
 }
 
+/**
+ * _pow - check prototype at the top
+ * Description: a function that returns a power of any number
+ * @x: input integer x
+ * @index: input integer
+ * Return: returns an unsigned integer
+ */
 
 unsigned int _pow(int x, int index)
 {
@@ -60,5 +67,5 @@ unsigned int _pow(int x, int index)
 			mult *= x;
 		}
 	}
-	return mult;
+	return (mult);
 }
