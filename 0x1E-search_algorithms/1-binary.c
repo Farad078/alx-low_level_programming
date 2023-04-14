@@ -3,7 +3,7 @@
 #include <stdbool.h>
 
 /**
- * Binary_search - a function that searches for a value
+ * binary_search - a function that searches for a value
  * in a sorted array of integers using the
  * Binary search algorithm
  *
@@ -20,9 +20,9 @@ int binary_search(int *array, size_t size, int value)
 	size_t high = size - 1;
 	size_t mid;
 
-	if(array == NULL)
+	if (array == NULL)
 	{
-		return -1;
+		return (-1);
 	}
 
 	while (low <= high)
@@ -33,16 +33,16 @@ int binary_search(int *array, size_t size, int value)
 			printf("%d", array[low]);
 		}
 		for (int i = low; i < high; low++)
-                {
-                        printf(", ");
-                }
+		{
+			printf(", ");
+		}
 		if (array[high] == value)
 		{
 			return (high);
 		}
 		else if (array[high] > value)
 		{
-			mid = (low + high)/2;
+			mid = (low + high) / 2;
 			high = mid;
 		}
 		else if ((array[high] < value) && high < size)
@@ -54,5 +54,4 @@ int binary_search(int *array, size_t size, int value)
 			}
 		}
 	}
-	
 }
