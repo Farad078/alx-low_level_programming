@@ -42,7 +42,6 @@ int binary_search(int *array, size_t size, int value)
 		if (array[mid] == value)
 		{
 			return (mid);
-			break;
 		}
 		
 		else if (array[mid] > value)
