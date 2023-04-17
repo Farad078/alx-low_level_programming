@@ -1,0 +1,27 @@
+When you type in https://www.google.com in your browser and press enter, a complex series of processes are initiated that enable your browser to display the requested webpage. The various components involved include DNS request, TCP/IP, firewall, HTTPS/SSL, load-balancer, web server, application server, and database. In this article, we will delve into each of these components and explain how they work together to deliver the webpage.
+
+DNS Request:
+The first step in accessing any website is to convert the URL (Uniform Resource Locator) into an IP address that can be understood by the browser. This process is carried out by the Domain Name System (DNS). The browser sends a request to the DNS server to obtain the IP address of the requested website. If the DNS server has the IP address in its cache, it returns the IP address to the browser. Otherwise, it forwards the request to other DNS servers until the IP address is found.
+
+TCP/IP:
+Once the IP address is obtained, the browser initiates a Transmission Control Protocol (TCP) connection with the server hosting the website. TCP is a protocol that ensures reliable communication between two devices over a network. The Internet Protocol (IP) is used to route the data packets between the devices.
+
+Firewall:
+Before the TCP connection is established, the request has to go through the firewall. The firewall checks if the request is coming from a trusted source and whether the requested port is open or not. If the request passes the firewall, it is forwarded to the server.
+
+HTTPS/SSL:
+After the TCP connection is established, the browser sends an HTTP request to the server to fetch the webpage. However, for secure communication, HTTPS (HTTP Secure) is used instead of HTTP. HTTPS encrypts the data sent between the browser and the server using the SSL (Secure Sockets Layer) protocol. This ensures that the data exchanged between the two devices cannot be intercepted or read by anyone else.
+
+Load-balancer:
+When a website receives a large number of requests, it can become overloaded, which can lead to slow loading times or even crashes. To avoid this, load-balancers are used. A load-balancer distributes the incoming requests among multiple servers, ensuring that no single server becomes overloaded. This increases the website's reliability and speed.
+
+Web Server:
+Once the request passes through the load-balancer, it is forwarded to a web server. The web server receives the HTTPS request and sends back an HTTPS response containing the webpage's HTML, CSS, and JavaScript code. The web server processes the request and communicates with the application server to fetch the relevant data.
+
+Application Server:
+In many cases, the web server communicates with an application server that processes the request and fetches the data from the database. The application server uses server-side scripts (such as PHP, Python, or Ruby) to generate dynamic content. It retrieves data from the database and sends it back to the web server in a format that can be displayed in the browser.
+
+Database:
+The final step involves retrieving data from the database. The application server communicates with the database server to fetch the requested data. The database server returns the data to the application server, which then formats it into HTML, CSS, or JavaScript, as required. The data is then sent back to the web server, which sends the final response to the browser.
+
+In conclusion, the process of displaying a webpage involves multiple components working together to deliver the desired result. Understanding how these components interact can help software engineers optimize the website's performance and ensure a smooth user experience. By breaking down the complex process into smaller steps, we can gain a better understanding of the underlying mechanisms and appreciate the complexity of the web stack.
